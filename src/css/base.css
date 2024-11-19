@@ -22,6 +22,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  background-color: #f0f0f0;
 }
 
 main {
@@ -29,4 +30,84 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+
+h1 {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+h2 {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+
+  /* line-height: 40px; */
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+
+  /* line-height: 28px; */
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+@media (min-width: 769px) {
+  h1 {
+    font-size: 136px;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+  }
+
+  h2 {
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+  }
+
+  h3 {
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
 }
