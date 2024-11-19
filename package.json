@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/lloyd-jefferson-portfolio-group-10/",
+    "build": "vite build --base=/portfolio-group-10/",
     "preview": "vite preview"
   },
   "devDependencies": {
