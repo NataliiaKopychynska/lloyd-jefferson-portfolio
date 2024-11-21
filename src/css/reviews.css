@@ -84,10 +84,6 @@
   border: 1px solid #292929;
   background: #e4e5e6;
 }
-.swiper-button-n:active {
-  background-color: #292929;
-}
-
 @media only screen and (min-width: 768px) {
   .review-header {
     font-weight: 400;

@@ -11,6 +11,7 @@ navigation: {
  pagination: {
     el: '.swiper-pagination',
     },   
+  spaceBetween: 10,
  reachBeginning: '.swiper-button-p',
     keyboard: {
         enabled: true,
