@@ -15,11 +15,9 @@
 .review-list-order {
   background: #e4e5e6;
   border-radius: 16px;
-  gap: 24px;
 }
 .list-order-container {
   padding: 32px;
-  max-height: auto;
   justify-content: space-between;
   display: flex;
   flex-direction: column;
@@ -61,11 +59,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #292929;
+  border: 1px solid #e4e5e6;
   border-radius: 8px;
   padding: 12px;
   width: 40px;
   height: 40px;
+  pointer-events: none;
 }
 .swiper-button-n {
   display: flex;
@@ -79,7 +78,7 @@
 }
 .swiper-button-p:hover {
   border: 1px solid #292929;
-  background: #e4e5e6;
+  background-color: #e4e5e6;
 }
 .swiper-button-n:hover {
   border: 1px solid #292929;
@@ -88,6 +87,7 @@
 .swiper-button-n:active {
   background-color: #292929;
 }
+
 @media only screen and (min-width: 768px) {
   .review-header {
     font-weight: 400;
