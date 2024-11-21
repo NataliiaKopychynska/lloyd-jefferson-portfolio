@@ -31,27 +31,34 @@ navigation: {
 );
 
 swiper.on('reachEnd', function() {
-    var swjsNext = document.querySelector('.swiper-button-n');
+    let swjsNext = document.querySelector('.swiper-button-n');
     swjsNext.style.border = '1px solid #e4e5e6';
     swjsNext.style.pointerEvents = 'none';
+    let btnIconN = document.querySelector('.btn-icon-n');
+    btnIconN.style.stroke = '#e4e5e6';
 });
 
 swiper.on('reachBeginning', function() {
-    var swjsPrev = document.querySelector('.swiper-button-p');
+    let swjsPrev = document.querySelector('.swiper-button-p');
     swjsPrev.style.border = '1px solid #e4e5e6';
     swjsPrev.style.pointerEvents = 'none';
+    let btnIconP = document.querySelector('.btn-icon-p');
+    btnIconP.style.stroke = '#e4e5e6';
 });
 
-
 swiper.on('fromEdge', function() {
-    var swjsNext = document.querySelector('.swiper-button-n');
+    let swjsNext = document.querySelector('.swiper-button-n');
     swjsNext.style.display = 'flex';
     swjsNext.style.border = '1px solid #292929';
     swjsNext.style.pointerEvents = 'auto';
-    var swjsPrev = document.querySelector('.swiper-button-p');
+    let btnIconN = document.querySelector('.btn-icon-n');
+    btnIconN.style.stroke = '#292929';
+    let swjsPrev = document.querySelector('.swiper-button-p');
     swjsPrev.style.display = 'flex'; 
     swjsPrev.style.border = '1px solid #292929';
     swjsPrev.style.pointerEvents = 'auto';
+    let btnIconP = document.querySelector('.btn-icon-p');
+    btnIconP.style.stroke = '#292929';
 });
 
 const fetchReview = document.querySelector(".review-list");
