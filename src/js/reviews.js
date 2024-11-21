@@ -12,7 +12,8 @@ navigation: {
     el: '.swiper-pagination',
     },   
   spaceBetween: 10,
- reachBeginning: '.swiper-button-p',
+reachBeginning: '.swiper-button-p',
+reachEnd:'.swiper-button-n',
     keyboard: {
         enabled: true,
         // pageUpDown: true,

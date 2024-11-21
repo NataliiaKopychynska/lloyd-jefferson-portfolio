@@ -32,6 +32,7 @@
   color: #292929;
   margin-bottom: 24px;
   overflow: auto;
+  scrollbar-width: none;
 }
 
 .btn-icon {
@@ -90,11 +91,11 @@
 }
 .swiper-button-p:hover {
   border: 1px solid #292929;
-  background-color: #e4e5e6;
+  background-color: #bbbbbb;
 }
 .swiper-button-n:hover {
   border: 1px solid #292929;
-  background: #e4e5e6;
+  background-color: #bbbbbb;
 }
 @media only screen and (min-width: 768px) {
   .review-header {
