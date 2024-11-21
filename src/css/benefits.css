@@ -1,0 +1,99 @@
+.title-benefits {
+  padding-bottom: 40px;
+}
+
+.highlight {
+  color: #00b068;
+}
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 32px;
+  list-style: none;
+}
+
+.list-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 320px; /* Максимальна ширина для елемента */
+  text-align: center;
+}
+
+.all-icon {
+  fill: transparent;
+  stroke: #00b068;
+  display: block; /* щоб зберегти правильний розмір */
+  margin: auto;
+}
+
+.back-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #bcdfd1;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center; /* по горизонталі */
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.name-benefits {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  margin-bottom: 16px;
+}
+
+.text-benefits {
+  text-transform: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: black;
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-benefits {
+    font-weight: 400;
+    font-size: 108px;
+
+    line-height: 124px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+  }
+
+  .list-icon {
+    max-width: 336px;
+  }
+
+  .benefits-list {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .list-icon:nth-child(1) {
+    align-self: flex-end;
+  }
+
+  .flex-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+
+  .list-icon:nth-child(4) {
+    align-self: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+}
