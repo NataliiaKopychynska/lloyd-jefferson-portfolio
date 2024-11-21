@@ -21,6 +21,7 @@
   justify-content: space-between;
   display: flex;
   flex-direction: column;
+  height: 296px;
 }
 .review-list-text {
   text-transform: none;
@@ -30,6 +31,17 @@
   letter-spacing: 0.03em;
   color: #292929;
   margin-bottom: 24px;
+  overflow: auto;
+}
+
+.btn-icon {
+  fill: transparent;
+  stroke: #292929;
+  width: 24px;
+  height: 24px;
+}
+.btn-icon-p {
+  stroke: #e4e5e6;
 }
 .review-list-box {
   display: flex;
@@ -91,6 +103,9 @@
     line-height: 1.14815;
     letter-spacing: 0.02em;
     padding-bottom: 60px;
+  }
+  .list-order-container {
+    height: 224px;
   }
 }
 @media only screen and (min-width: 1280px) {

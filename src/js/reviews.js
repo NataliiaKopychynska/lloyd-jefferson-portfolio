@@ -31,7 +31,6 @@ navigation: {
 );
 
 swiper.on('reachEnd', function() {
-    var swjsNext = document.querySelector('.swiper-button-n');
     swjsNext.style.border = '1px solid #e4e5e6';
     swjsNext.style.pointerEvents = 'none';
 });
