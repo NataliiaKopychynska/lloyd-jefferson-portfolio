@@ -9,21 +9,18 @@
   padding-bottom: 40px;
 }
 .review-list {
-  display: flex;
-  flex-direction: column;
   padding-bottom: 24px;
+  min-width: 0;
 }
-/* .review-list > .review-list-order:nth-child(2) {
-  display: none;
-} */
 .review-list-order {
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
   background: #e4e5e6;
   border-radius: 16px;
-  gap: 24px;
+}
+.list-order-container {
+  padding: 32px;
   justify-content: space-between;
+  display: flex;
+  flex-direction: column;
 }
 .review-list-text {
   text-transform: none;
@@ -32,6 +29,7 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: #292929;
+  margin-bottom: 24px;
 }
 .review-list-box {
   display: flex;
@@ -51,24 +49,40 @@
   letter-spacing: 0.03em;
   color: #292929;
 }
-.review-box-btn {
+.swiper-arrow {
   display: flex;
   flex-direction: row;
-  justify-content: end;
   gap: 16px;
+  justify-content: end;
 }
-.review-btn {
+.swiper-button-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #e4e5e6;
   border-radius: 8px;
   padding: 12px;
-  width: 48px;
-  height: 48px;
-  align-items: center;
-  justify-content: center;
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
 }
-.review-btn:hover {
+.swiper-button-n {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #292929;
+  border-radius: 8px;
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+}
+.swiper-button-p:hover {
+  border: 1px solid #292929;
+  background-color: #e4e5e6;
+}
+.swiper-button-n:hover {
+  border: 1px solid #292929;
   background: #e4e5e6;
-  border-color: #292929;
 }
 @media only screen and (min-width: 768px) {
   .review-header {
@@ -80,15 +94,12 @@
   }
 }
 @media only screen and (min-width: 1280px) {
-  .review-header {
-    padding-bottom: 80px;
+  .swiper-button-p {
+    width: 48px;
+    height: 48px;
   }
-  .review-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 32px;
-  }
-  .review-list-order {
-    width: 592px;
+  .swiper-button-n {
+    width: 48px;
+    height: 48px;
   }
 }
