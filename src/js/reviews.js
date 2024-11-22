@@ -37,6 +37,8 @@ swiper.on('reachEnd', function() {
     swjsNext.style.pointerEvents = 'none';
     let btnIconN = document.querySelector('.btn-icon-n');
     btnIconN.style.stroke = '#e4e5e6';
+    let swjsPrevH = document.querySelector('.swiper-button-n:hover');
+    swjsPrevH.style.backgroundColor = '#f0f0f0';
 });
 
 swiper.on('reachBeginning', function() {
@@ -45,6 +47,8 @@ swiper.on('reachBeginning', function() {
     swjsPrev.style.pointerEvents = 'none';
     let btnIconP = document.querySelector('.btn-icon-p');
     btnIconP.style.stroke = '#e4e5e6';
+    let swjsPrevP = document.querySelector('.swiper-button-p:hover');
+    swjsPrevP.style.backgroundColor = '#f0f0f0';
 });
 
 swiper.on('fromEdge', function() {
