@@ -7,15 +7,14 @@
 }
 .benefits-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 32px;
   list-style: none;
+  margin-bottom: 32px;
 }
 
-.flex-list {
+.benefits-second-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 32px;
 }
 
@@ -24,14 +23,14 @@
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  max-width: 320px; /* Максимальна ширина для елемента */
+  max-width: 320px;
   text-align: center;
 }
 
 .all-icon {
   fill: transparent;
   stroke: #00b068;
-  display: block; /* щоб зберегти правильний розмір */
+  display: block;
   margin: auto;
 }
 
@@ -41,7 +40,7 @@
   background-color: #bcdfd1;
   border-radius: 8px;
   display: flex;
-  justify-content: center; /* по горизонталі */
+  justify-content: center;
   align-items: center;
   margin-bottom: 16px;
 }
@@ -82,22 +81,53 @@
   }
 
   .benefits-list {
-    justify-content: flex-start;
-    flex-direction: column;
+    justify-content: flex-end;
   }
 
-  .list-icon:nth-child(1) {
-    align-self: flex-end;
-  }
-
-  .flex-list {
-    flex-wrap: nowrap;
-  }
-
-  .list-icon:nth-child(4) {
-    align-self: flex-start;
+  .benefits-second-list {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 @media only screen and (min-width: 1280px) {
+  .benefits {
+    background-image: url('/img/bg-materials/desctop-bg-benefits.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right top;
+    padding-top: 116px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .benefits {
+      background-image: url('/img/bg-materials/desctop-bg-benefits-2x.png');
+    }
+  }
+
+  .title-benefits {
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 124px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+
+  .title-benefits .line {
+    display: block;
+  }
+
+  .benefits-list {
+    margin-top: -100px;
+  }
+
+  .benefits-second-list {
+    justify-content: space-between;
+  }
+
+  .back-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 24px;
+  }
 }
