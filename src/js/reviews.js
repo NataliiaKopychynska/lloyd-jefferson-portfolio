@@ -12,7 +12,8 @@ navigation: {
     el: '.swiper-pagination',
     },   
   spaceBetween: 10,
- reachBeginning: '.swiper-button-p',
+reachBeginning: '.swiper-button-p',
+reachEnd:'.swiper-button-n',
     keyboard: {
         enabled: true,
         // pageUpDown: true,
@@ -36,6 +37,8 @@ swiper.on('reachEnd', function() {
     swjsNext.style.pointerEvents = 'none';
     let btnIconN = document.querySelector('.btn-icon-n');
     btnIconN.style.stroke = '#e4e5e6';
+    // let swjsPrevH = document.querySelector('.swiper-button-n:hover');
+    // swjsPrevH.style.backgroundColor = '#f0f0f0';
 });
 
 swiper.on('reachBeginning', function() {
@@ -44,6 +47,8 @@ swiper.on('reachBeginning', function() {
     swjsPrev.style.pointerEvents = 'none';
     let btnIconP = document.querySelector('.btn-icon-p');
     btnIconP.style.stroke = '#e4e5e6';
+    // let swjsPrevP = document.querySelector('.swiper-button-p:hover');
+    // swjsPrevP.style.backgroundColor = '#f0f0f0';
 });
 
 swiper.on('fromEdge', function() {
@@ -53,12 +58,16 @@ swiper.on('fromEdge', function() {
     swjsNext.style.pointerEvents = 'auto';
     let btnIconN = document.querySelector('.btn-icon-n');
     btnIconN.style.stroke = '#292929';
+    //  let swjsPrevH = document.querySelector('.swiper-button-n:hover');
+    // swjsPrevH.style.backgroundColor = '#bbbbbb';
     let swjsPrev = document.querySelector('.swiper-button-p');
     swjsPrev.style.display = 'flex'; 
     swjsPrev.style.border = '1px solid #292929';
     swjsPrev.style.pointerEvents = 'auto';
     let btnIconP = document.querySelector('.btn-icon-p');
     btnIconP.style.stroke = '#292929';
+    //  let swjsPrevP = document.querySelector('.swiper-button-p:hover');
+    // swjsPrevP.style.backgroundColor = '#bbbbbb';
 });
 
 const fetchReview = document.querySelector(".review-list");
