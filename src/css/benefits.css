@@ -13,6 +13,12 @@
   list-style: none;
 }
 
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
 .list-icon {
   display: flex;
   flex-direction: column;
@@ -85,9 +91,7 @@
   }
 
   .flex-list {
-    display: flex;
     flex-wrap: nowrap;
-    gap: 32px;
   }
 
   .list-icon:nth-child(4) {
