@@ -146,6 +146,7 @@ font-size: 50px;
 @media only screen and (min-width: 1280px){
     .container-project {
         padding: 0 136px;
+        margin-bottom: 48px;
     }
 
     .project-title {
