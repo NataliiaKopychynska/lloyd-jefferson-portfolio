@@ -8,14 +8,30 @@
   text-align: center;
   padding-bottom: 40px;
 }
+.review-not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 296px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  background-color: #e4e5e6;
+  border-radius: 16px;
+  position: center;
+}
 .review-list {
-  padding-bottom: 24px;
   min-width: 0;
 }
 .review-list-order {
   background: #e4e5e6;
   border-radius: 16px;
+  margin-bottom: 24px;
 }
+
 .list-order-container {
   padding: 32px;
   justify-content: space-between;
@@ -105,6 +121,10 @@
     letter-spacing: 0.02em;
     padding-bottom: 60px;
   }
+  .review-not-found {
+    width: 704px;
+    height: 288px;
+  }
   .list-order-container {
     height: 224px;
   }
@@ -113,6 +133,10 @@
   .swiper-button-p {
     width: 48px;
     height: 48px;
+  }
+  .review-not-found {
+    width: 592px;
+    height: 224px;
   }
   .swiper-button-n {
     width: 48px;
