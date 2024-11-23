@@ -53,11 +53,11 @@
   text-transform: none;
   font-weight: 300;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   letter-spacing: 0.03em;
   color: black;
   text-align: left;
-  width: 320px;
+  max-width: 320px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -113,6 +113,7 @@
     background-size: auto;
     background-position: right top;
     padding-top: 116px;
+    background-size: 526px 409px;
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
