@@ -28,6 +28,7 @@ reachEnd:'.swiper-button-n',
 }
 );
 
+
 swiper.on('reachEnd', function() {
     let swjsNext = document.querySelector('.swiper-button-n');
     swjsNext.style.border = '1px solid #e4e5e6';
