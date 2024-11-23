@@ -1,4 +1,6 @@
 import axios from 'axios';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const togetherForm = document.querySelector('#contactForm');
 togetherForm.addEventListener('submit', async function (event) {
@@ -46,5 +48,9 @@ function closeModal() {
 }
 
 function showErrorMessage(message) {
-  alert(message);
+  iziToast.error({
+    title: 'Opps, Error',
+    message: 'Try again later',
+    timeout: 5000,
+  });
 }

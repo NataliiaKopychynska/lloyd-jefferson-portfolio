@@ -1,4 +1,6 @@
 .work-together {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .together-title {
@@ -70,8 +72,7 @@
 .form-input {
   border-radius: 8px;
   padding: 16px;
-  min-width: 280px;
-  max-width: 320px;
+  width: 320px;
   height: 48px;
   background: #e4e5e6;
   border: none;
@@ -80,8 +81,7 @@
 .form-textarea {
   border-radius: 8px;
   padding: 16px;
-  min-width: 280px;
-  max-width: 320px;
+  width: 320px;
   height: 128px;
   background: #e4e5e6;
   border: none;
@@ -90,7 +90,7 @@
 
 .form-textarea::placeholder,
 .form-input::placeholder {
-  ont-weight: 300;
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -100,8 +100,7 @@
 .form-button {
   border-radius: 8px;
   padding: 12px;
-  min-width: 280px;
-  max-width: 320px;
+  width: 320px;
   height: 48px;
   background: #00b068;
   border: none;
@@ -136,6 +135,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  z-index: 2;
 }
 
 .modal {
@@ -223,18 +223,15 @@
   }
 
   .form-input {
-    max-width: 704px;
-    min-width: none;
+    width: 704px;
   }
 
   .form-textarea {
-    max-width: 704px;
-    min-width: none;
+    width: 704px;
   }
 
   .form-button {
-    max-width: 173px;
-    min-width: none;
+    width: 173px;
   }
 
   .modal {
