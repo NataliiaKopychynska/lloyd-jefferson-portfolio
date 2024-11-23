@@ -49,5 +49,8 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M24 8l-16 16"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M8 8l16 16"></path>
 </symbol>
+  <symbol id="icon-arrow-right-hero" viewBox="0 0 60 32">
+<path d="M46.686 1.859l12.728 12.728c0.781 0.781 0.781 2.047 0 2.828l-12.728 12.728c-0.781 0.781-2.047 0.781-2.828 0s-0.781-2.047 0-2.828l9.314-9.314h-51.172c-1.105 0-2-0.895-2-2s0.895-2 2-2h51.172l-9.314-9.314c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0z"></path>
+</symbol>
 </defs>
 </svg>
