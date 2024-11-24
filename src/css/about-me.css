@@ -15,11 +15,12 @@
 .about-image {
     border-radius: 16px;
     margin: 0 auto;
-    max-width: 320px;
-    height: 374px;
 }
 
 .about-img-box {
+    max-width: 320px;
+    min-width: 280px;
+    height: auto;
     margin-bottom: 40px;
 }
 
@@ -115,9 +116,6 @@
     .about-img-box {
         align-self: flex-end;
         margin-bottom: 0;
-    }
-    
-    .about-image {
         max-width: 336px;
         height: 392px;
     }
@@ -173,11 +171,6 @@
     
     .about-img-box {
         margin-left: 208px;
-    }
-    
-    .about-picture {}
-    
-    .about-image {
         max-width: 384px;
         height: 448px;
     }
@@ -193,12 +186,4 @@
         height: 280px;
         gap: 136px;
     }
-    
-    .about-education {}
-    
-    .about-list {}
-    
-    .about-list-item {}
-    
-    .about-role {}
 }
