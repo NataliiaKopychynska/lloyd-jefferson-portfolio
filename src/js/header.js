@@ -13,23 +13,7 @@ iconStart.addEventListener("click", modalOpen);
 function modalOpen() {
   const currentHref = iconBurger.getAttribute("href");
 
-  if (currentHref === "/portfolio-group-10/assets/sprite--ikKmnnz.svg#icon-close-x") {
-    iconBurger.setAttribute("href", "/portfolio-group-10/assets/sprite--ikKmnnz.svg#icon-burger");
-    navModal.classList.remove("nav-mob-open");
-  } else {
-    iconBurger.setAttribute("href", "/portfolio-group-10/assets/sprite--ikKmnnz.svg#icon-close-x");
-    navModal.classList.add("nav-mob-open");
-  }
-}
 
-Array.from(modalItems).forEach(item => {
-  item.addEventListener("click", closeModal);
-});
-
-function closeModal() {
-  iconBurger.setAttribute("href", "./img/sprite.svg#icon-burger");
-  navModal.classList.remove("nav-mob-open");
-}
 
 const now = new Date();
 const hours = now.getHours();
