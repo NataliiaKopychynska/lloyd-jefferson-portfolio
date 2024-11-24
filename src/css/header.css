@@ -57,11 +57,13 @@
     background-size: contain;
 }
 
+.icon-night{
+    fill: white;
+    stroke: white;
+}
 .navig-header-night{
     background-color: rgba(41, 41, 41, 1);
     color: white;
-    fill: white;
-    stroke: white;
 }
 
 .nav-mob-open {
