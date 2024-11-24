@@ -21,7 +21,7 @@ function modalOpen() {
   } else {
     iconBurger.setAttribute("href", "/portfolio-group-10/assets/sprite--ikKmnnz.svg#icon-close-x");
     navModal.classList.add("nav-mob-open");
-    bodyToSite.classList.add("no-scroll");
+    bodyToSite.classList.remove("no-scroll");
     
   }
 }
