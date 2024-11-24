@@ -130,6 +130,9 @@
   }
 }
 @media only screen and (min-width: 1280px) {
+  .review-container {
+    margin-bottom: 48px;
+  }
   .swiper-button-p {
     width: 48px;
     height: 48px;
