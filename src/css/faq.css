@@ -117,6 +117,8 @@ font-weight: 300;
  
 @media screen and (min-width: 768px) {
 
+ 
+
     .faq-title {
         font-size: 108px;
         letter-spacing: 0.02em;
@@ -132,23 +134,23 @@ font-weight: 300;
 }
 
 @media screen and (min-width: 1280px) {
+
+
     .faq-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            background-image: url(/img/bg-materials/desctop-bg-faq.png);
-            background-repeat: no-repeat;
-            background-position: left bottom;
-         
-             
+        height: 1020px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-image: url(/img/bg-materials/desctop-bg-faq.png);
+        background-repeat: no-repeat;
+         background-position: left bottom;
         }
 
  @media screen and (-webkit-min-device-pixel-ratio:2),
     (min-resotulion:2dppx),
     (min-resotulion:2dpi) {
     .faq-container {
-    background-image: url(/img/bg-materials/desctop-bg-faq-2x.png);
-        
+     background-image: url(/img/bg-materials/desctop-bg-faq-2x.png); 
     }
         
         
