@@ -27,27 +27,32 @@ Array.from(modalItems).forEach(item => {
 });
 
 function closeModal() {
-  iconBurger.setAttribute("href", "img/sprite.svg#icon-burger"); // Возвращаем иконку бургера
+  iconBurger.setAttribute("href", "./img/sprite.svg#icon-burger");
   navModal.classList.remove("nav-mob-open");
 }
 
 const now = new Date();
 const hours = now.getHours();
 
-if (hours >= 18 || hours < 6) {
+const elements = document.querySelectorAll('h1, h2, h3, h4, h5, p, a, li');
 
+if (hours >= 18 || hours < 6) {
+    elements.forEach(element => {
+    element.classList.add('navig-header-night');
+    });
   navModal.classList.add("navig-header-night");
   logoText.classList.add("navig-header-night");
   header.classList.add("navig-header-night");
-  iconModal.classList.add("navig-header-night");
+  iconModal.classList.add("icon-night");
     bodyToSite.classList.add("navig-header-night");
     
 } else {
-
+    elements.forEach(element => {
+    element.classList.remove('navig-header-night');
+    });
   navModal.classList.remove("navig-header-night");
   logoText.classList.remove("navig-header-night");
   header.classList.remove("navig-header-night");
-  iconModal.classList.remove("navig-header-night");
+  iconModal.classList.remove("icon-night");
     bodyToSite.classList.remove("navig-header-night");
-    
 }
