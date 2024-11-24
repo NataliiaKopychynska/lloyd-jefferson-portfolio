@@ -33,6 +33,7 @@ Array.from(modalItems).forEach(item => {
 function closeModal() {
   iconBurger.setAttribute("href", "/portfolio-group-10/assets/sprite--ikKmnnz.svg#icon-burger");
   navModal.classList.remove("nav-mob-open");
+  bodyToSite.classList.add("no-scroll");
 }
 
 const now = new Date();
