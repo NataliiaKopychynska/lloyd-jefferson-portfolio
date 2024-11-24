@@ -1,0 +1,69 @@
+.section-marquee{
+    margin-bottom: 164px;
+}
+
+.marquee {
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 34px;
+    background-color: #BCDFD1;
+}
+
+.two{
+background-color: #E4E5E6;
+transform: rotate(2deg);
+overflow: hidden;
+    font-family: "Pridi", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+}
+
+.marquee__inner {
+    display: flex;
+}
+
+.marquee__line {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 10px 15px;
+    min-width: 100%;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+
+    font-size: 36px;
+        font-weight: 500;
+        line-height: 48px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        
+}
+
+.dot{
+    color: #00B068;
+}
+
+.dot2{
+    color: black;
+}
+
+
+.second-text{
+    color:  #00B068;;
+}
+
+
+@keyframes marqueeLine {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
