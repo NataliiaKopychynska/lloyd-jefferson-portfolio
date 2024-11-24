@@ -37,6 +37,7 @@
 
 .icon-open-modal{
     fill: rgba(41, 41, 41, 1);
+    stroke: black;
 }
 
 .navig-header {
@@ -50,12 +51,17 @@
     align-items: center;
     justify-content: center;
     transition: left 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-image: url('img/bg-materials/mobile.bg-hero-2x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .navig-header-night{
     background-color: rgba(41, 41, 41, 1);
     color: white;
     fill: white;
+    stroke: white;
 }
 
 .nav-mob-open {
