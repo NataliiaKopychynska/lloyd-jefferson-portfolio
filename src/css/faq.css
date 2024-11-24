@@ -156,7 +156,7 @@ background-position: left bottom;
  @media screen and (-webkit-min-device-pixel-ratio:2),
     (min-resotulion:2dppx),
     (min-resotulion:2dpi) {
-    .faq-container {
+    .background-faq {
      background-image: url(/img/bg-materials/desctop-bg-faq-2x.png); 
     }
         
