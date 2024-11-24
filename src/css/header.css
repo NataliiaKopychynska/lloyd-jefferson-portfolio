@@ -51,7 +51,7 @@
     align-items: center;
     justify-content: center;
     transition: left 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    background-image: url('/img/bg-materials/mobile.bg-hero-2x.png');
+    background-image: url('./img/bg-materials/mobile.bg-hero-2x.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
