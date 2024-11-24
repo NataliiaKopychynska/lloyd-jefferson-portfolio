@@ -13,11 +13,11 @@ iconStart.addEventListener("click", modalOpen);
 function modalOpen() {
   const currentHref = iconBurger.getAttribute("href");
 
-  if (currentHref === "img/sprite.svg#icon-close-x") {
-    iconBurger.setAttribute("href", "img/sprite.svg#icon-burger");
+  if (currentHref === "./img/sprite.svg#icon-close-x") {
+    iconBurger.setAttribute("href", "./img/sprite.svg#icon-burger");
     navModal.classList.remove("nav-mob-open");
   } else {
-    iconBurger.setAttribute("href", "img/sprite.svg#icon-close-x");
+    iconBurger.setAttribute("href", "./img/sprite.svg#icon-close-x");
     navModal.classList.add("nav-mob-open");
   }
 }
