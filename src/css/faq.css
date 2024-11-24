@@ -134,16 +134,23 @@ font-weight: 300;
 }
 
 @media screen and (min-width: 1280px) {
-
+.background-faq {
+position: absolute;
+top: 610px;
+left: 50px;
+width: 538px;
+height: 417px;
+background-image: url(/img/bg-materials/desctop-bg-faq.png);
+background-repeat: no-repeat;
+background-position: left bottom;
+}
 
     .faq-container {
-        height: 1020px;
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        background-image: url(/img/bg-materials/desctop-bg-faq.png);
-        background-repeat: no-repeat;
-         background-position: left bottom;
+ 
         }
 
  @media screen and (-webkit-min-device-pixel-ratio:2),
