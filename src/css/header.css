@@ -53,8 +53,9 @@
     transition: left 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     background-image: url('../img/bg-materials/mobile.bg-hero-2x.png');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: top;
+    background-size: contain;
+    z-index: 999;
 }
 
 .icon-night{
@@ -66,8 +67,14 @@
     color: white;
 }
 
+.no-scroll{
+    overflow: hidden;
+}
+
 .nav-mob-open {
     left: 0;
+    position: fixed;
+    z-index: 999;
 }
 
 .header-list{
