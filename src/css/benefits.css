@@ -1,0 +1,170 @@
+.title-benefits {
+  padding-bottom: 40px;
+}
+
+.highlight {
+  color: #00b068;
+}
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 32px;
+}
+
+.list-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+}
+
+.all-icon {
+  fill: transparent;
+  stroke: #00b068;
+  display: block;
+  margin: auto;
+}
+
+.back-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #bcdfd1;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.name-benefits {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  margin-bottom: 16px;
+}
+
+.text-benefits {
+  text-transform: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: black;
+  text-align: left;
+  width: 320px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-benefits {
+    font-weight: 400;
+    font-size: 108px;
+
+    line-height: 124px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+  }
+
+  .list-icon {
+    max-width: 336px;
+  }
+
+  .benefits-list {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-areas:
+      '.a'
+      'b c'
+      'd.';
+    gap: 32px;
+  }
+
+  .f-icon {
+    grid-area: a;
+  }
+
+  .s-icon {
+    grid-area: b;
+  }
+
+  .t-icon {
+    grid-area: c;
+  }
+
+  .j-icon {
+    grid-area: d;
+  }
+
+  .text-benefits {
+    width: 336px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .benefits {
+    background-image: url('/img/bg-materials/desctop-bg-benefits.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right top;
+    padding-top: 116px;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .benefits {
+      background-image: url('/img/bg-materials/desctop-bg-benefits-2x.png');
+    }
+  }
+
+  .title-benefits {
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 124px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+
+  .title-benefits .line {
+    display: block;
+  }
+
+  .benefits-list {
+    margin-top: -100px;
+    display: grid;
+    grid-template-areas:
+      '. . a'
+      'b c d';
+    gap: 32px;
+  }
+
+  .f-icon {
+    grid-area: a;
+  }
+
+  .s-icon {
+    grid-area: b;
+  }
+
+  .t-icon {
+    grid-area: c;
+  }
+
+  .j-icon {
+    grid-area: d;
+  }
+
+  .back-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 24px;
+  }
+
+  .text-benefits {
+    width: 384px;
+  }
+}
