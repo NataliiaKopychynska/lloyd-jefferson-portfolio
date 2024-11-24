@@ -16,9 +16,13 @@ function modalOpen() {
   if (currentHref === "/portfolio-group-10/assets/sprite--ikKmnnz.svg#icon-close-x") {
     iconBurger.setAttribute("href", "/portfolio-group-10/assets/sprite--ikKmnnz.svg#icon-burger");
     navModal.classList.remove("nav-mob-open");
+    bodyToSite.classList.remove("no-scroll");
+    
   } else {
     iconBurger.setAttribute("href", "/portfolio-group-10/assets/sprite--ikKmnnz.svg#icon-close-x");
     navModal.classList.add("nav-mob-open");
+    bodyToSite.classList.add("no-scroll");
+    
   }
 }
 
