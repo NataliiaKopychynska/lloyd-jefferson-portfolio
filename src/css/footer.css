@@ -41,6 +41,16 @@
   .footer-text {
     text-align: end;
   }
+  .link-footer {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
 }
 
 @media screen and (min-width: 1280px) {
