@@ -2,7 +2,7 @@
 .hero {
     padding-top: 96px;
     
-    background-image: url('../img/bg-materials/mobile.bg-hero.png');
+    background-image: url('./img/bg-materials/mobile.bg-hero.png');
     background-repeat: no-repeat;
 }
 .hero-title {
@@ -31,7 +31,7 @@
     
 }
 .hero-icon-arrow {
-    color:#00B068;
+    fill:#00B068;
 }
 
 .bg-box {
@@ -107,7 +107,7 @@ text-decoration-skip-ink: none;
 @media screen and (min-width:768px) {
      .hero {
         padding-top: 88px;
-        background-image: url('../img/bg-materials/tablet-bg-hero.png');
+        background-image: url('./img/bg-materials/tablet-bg-hero.png');
 
      }
      .hero-title {
@@ -165,7 +165,7 @@ text-decoration-skip-ink: none;
 @media screen and (min-width:1280px) {
     .hero {
         padding-top: 184px;
-        background-image: url('../img/bg-materials/desctop-bg-hero.png');
+        background-image: url('./img/bg-materials/desctop-bg-hero.png');
        
      }
      .hero-title {
@@ -202,8 +202,12 @@ text-decoration-skip-ink: none;
          margin-left:130px;
          transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     } */
+    .hero-box:hover {
+        gap:30px;
+    }
     .hero-box:hover .hero-icon-arrow {
-        margin-left:130px;
+         
+        margin-left:120px;
         transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
    }
     .work-text {
