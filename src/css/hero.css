@@ -47,6 +47,10 @@
 
     
     }
+
+    .work-text:last-child {
+        margin-bottom: 72px;
+    }
 .hero-link {
     font-family: Poppins;
     font-size: 18px;
@@ -59,6 +63,9 @@
 
     color:#292929;
     z-index: 2;
+}
+.work-text:last-child {
+    margin-bottom:72px;
 }
 .span-work-text {
     color:#00B068;
