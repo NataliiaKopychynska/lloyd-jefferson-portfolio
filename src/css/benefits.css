@@ -1,3 +1,7 @@
+.benefits {
+  padding-top: 80px;
+}
+
 .title-benefits {
   padding-bottom: 40px;
 }
@@ -61,6 +65,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 124px;
+  }
+
   .title-benefits {
     font-weight: 400;
     font-size: 108px;
