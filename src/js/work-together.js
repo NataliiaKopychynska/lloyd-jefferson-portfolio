@@ -3,6 +3,8 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
 const togetherForm = document.querySelector('#contactForm');
+const backdropTogether = document.querySelector('.backdrop-together');
+const noScroll = document.querySelector('body');
 
 if (togetherForm) {
   togetherForm.addEventListener('submit', async function (event) {
@@ -44,9 +46,9 @@ function handleEscapePress(event) {
 }
 
 function openModal() {
-  const backdropTogether = document.querySelector('.backdrop-together');
   if (backdropTogether) {
     backdropTogether.classList.add('are-open');
+    noScroll.classList.add('no-scroll');
     document.addEventListener('keydown', handleEscapePress);
   }
 }
@@ -57,12 +59,11 @@ if (modalClsBtn) {
 }
 
 function closeModal() {
-  const backdropTogether = document.querySelector('.backdrop-together');
   backdropTogether.classList.remove('are-open');
+  noScroll.classList.remove('no-scroll');
   document.removeEventListener('keydown', handleEscapePress);
 }
 
-const backdropTogether = document.querySelector('.backdrop-together');
 if (backdropTogether) {
   backdropTogether.addEventListener('click', event => {
     if (event.target === backdropTogether) {
