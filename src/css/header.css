@@ -1,1 +1,143 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
+.header-box{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.link-logo-header{
+    font-family: Impact;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: rgba(41, 41, 41, 1);
+}
+
+.span-logo-header{
+    color: rgba(0, 176, 104, 1);
+}
+
+.icon-open-modal{
+    fill: rgba(41, 41, 41, 1);
+    stroke: black;
+}
+
+.link-section{
+    font-family: Poppins;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.navig-header {
+    position: absolute;
+    top: 64px;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(240, 240, 240, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-image: url('../img/bg-materials/mobile.bg-hero-2x.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    z-index: 999;
+}
+
+.icon-night{
+    fill: white;
+    stroke: white;
+}
+.navig-header-night{
+    background-color: rgba(41, 41, 41, 1);
+    color: white;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+.nav-mob-open {
+    left: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+.header-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.header-item{
+    &:hover, :focus {
+            color: rgba(0, 176, 104, 1);
+        }
+    
+        :active {
+            color: rgba(0, 176, 104, 1);
+        }
+}
+
+@media screen and (min-width:768px) {
+    .header-box {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        }
+    
+    .link-logo-header{
+        font-family: Impact;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 1.5px;
+    }
+
+    .icon-open-modal {
+        display: none;
+    }
+
+    .navig-header{
+    position: static;
+    height: 24px;
+    justify-content: end;
+
+    }
+
+    .header-list {
+        flex-direction: row;
+        gap: 40px;
+        }
+}
+
+@media screen and (min-width:1280px) {
+   
+}

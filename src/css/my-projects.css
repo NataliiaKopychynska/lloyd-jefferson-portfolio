@@ -1,3 +1,7 @@
+.my-projects {
+    padding-top: 80px;
+}
+
 .project-title {
 text-align: center;
 max-width: 291px;
@@ -12,7 +16,6 @@ margin: 0 auto 40px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 40px;
 }
 
 .project-pict-cont {
@@ -73,6 +76,7 @@ background-color: #bbb;
     height: 52px;
     margin: 0 auto;
     border: none;
+    margin-top: 40px;
 }
 
 .load-more-span {
@@ -108,6 +112,10 @@ font-size: 50px;
 }
 
 @media screen and (min-width: 768px){
+    .my-projects {
+        padding-top: 124px;
+    }
+    
     .project-title {
         font-weight: 400;
         text-transform: uppercase;
@@ -117,7 +125,6 @@ font-size: 50px;
 
         .project-list {
             gap: 60px;
-            margin-bottom: 60px;
         }
 
         .project-pict-cont {
@@ -135,6 +142,7 @@ font-size: 50px;
             .load-more {
                 height: 56px;
                 width: 165px;
+                margin-top: 60px;
             }
 
             .load-more-span {
@@ -144,8 +152,12 @@ font-size: 50px;
 }
 
 @media only screen and (min-width: 1280px){
+    .my-projects {
+    padding: 164px 0 48px;
+    }
+    
     .container-project {
-        padding: 0 136px;
+        padding: 0 136px;    
     }
 
     .project-title {
@@ -154,6 +166,9 @@ font-size: 50px;
 
         .project-list {
             gap: 80px;
-            margin-bottom: 80px;
+        }
+
+        .load-more-span {
+            margin-top: 80px;
         }
 }

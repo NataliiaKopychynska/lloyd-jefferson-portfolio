@@ -1,0 +1,84 @@
+.tech-skills-hidden-h {
+  display: none;
+}
+.section-marquee {
+  padding-top: 164px;
+}
+
+.marquee {
+  overflow: hidden;
+  font-weight: 600;
+  font-size: 34px;
+  background-color: #bcdfd1;
+}
+
+.two {
+  background-color: #e4e5e6;
+  transform: rotate(2deg);
+  overflow: hidden;
+  font-family: 'Pridi', sans-serif;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.marquee-inner {
+  display: flex;
+}
+
+.marquee-line {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 10px 16px;
+
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  min-width: 100%;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.dot {
+  color: #00b068;
+}
+
+.dot2 {
+  color: black;
+}
+
+.second-text {
+  color: #00b068;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .marquee-line {
+    font-size: 36px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 40px 16px;
+    min-width: 100%;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
