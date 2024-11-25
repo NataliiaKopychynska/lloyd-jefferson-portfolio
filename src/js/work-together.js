@@ -1,8 +1,11 @@
 import axios from 'axios';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
-document
-  .getElementById('contactForm')
-  .addEventListener('submit', async function (event) {
+const togetherForm = document.querySelector('#contactForm');
+
+if (togetherForm) {
+  togetherForm.addEventListener('submit', async function (event) {
     event.preventDefault();
 
     axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
@@ -17,10 +20,13 @@ document
     }
 
     try {
-      const response = await axios.post('/requests', {
-        email: email,
-        message: message,
+      await axios.post('/requests', {
+        email,
+        comment: message,
       });
+
+      openModal();
+      form.reset();
     } catch (error) {
       console.error('Помилка:', error);
       const errorMessage =
@@ -29,23 +35,46 @@ document
       showErrorMessage(errorMessage);
     }
   });
+}
 
-function showModal(message) {
-  const modalText = document.querySelector('.together-modal-text');
-  modalText.textContent = message;
-  openModal();
+function handleEscapePress(event) {
+  if (event.key === 'Escape') {
+    closeModal();
+  }
 }
 
 function openModal() {
-  const backdrop = document.querySelector('.backdrop');
-  backdrop.classList.add('is-open');
+  const backdropTogether = document.querySelector('.backdrop-together');
+  if (backdropTogether) {
+    backdropTogether.classList.add('are-open');
+    document.addEventListener('keydown', handleEscapePress);
+  }
+}
+
+const modalClsBtn = document.querySelector('.modal-close-btn');
+if (modalClsBtn) {
+  modalClsBtn.addEventListener('click', closeModal);
 }
 
 function closeModal() {
-  const backdrop = document.querySelector('.backdrop');
-  backdrop.classList.remove('is-open');
+  const backdropTogether = document.querySelector('.backdrop-together');
+  backdropTogether.classList.remove('are-open');
+  document.removeEventListener('keydown', handleEscapePress);
+}
+
+const backdropTogether = document.querySelector('.backdrop-together');
+if (backdropTogether) {
+  backdropTogether.addEventListener('click', event => {
+    if (event.target === backdropTogether) {
+      closeModal();
+    }
+  });
 }
 
 function showErrorMessage(message) {
-  alert(message);
+  iziToast.error({
+    title: 'Opps, Error',
+    message: 'Try again later',
+    timeout: 5000,
+  });
 }

@@ -1,10 +1,6 @@
 .work-together {
-  max-width: 320px;
-  /* padding: 80px 0; */
-  padding-top: 80px;
-  margin-bottom: 80px;
-  margin-right: 20px;
-  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .together-title {
@@ -76,7 +72,7 @@
 .form-input {
   border-radius: 8px;
   padding: 16px;
-  width: 320px;
+  max-width: 320px;
   height: 48px;
   background: #e4e5e6;
   border: none;
@@ -85,7 +81,7 @@
 .form-textarea {
   border-radius: 8px;
   padding: 16px;
-  width: 320px;
+  max-width: 320px;
   height: 128px;
   background: #e4e5e6;
   border: none;
@@ -94,7 +90,7 @@
 
 .form-textarea::placeholder,
 .form-input::placeholder {
-  ont-weight: 300;
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -104,7 +100,7 @@
 .form-button {
   border-radius: 8px;
   padding: 12px;
-  width: 320px;
+  max-width: 320px;
   height: 48px;
   background: #00b068;
   border: none;
@@ -121,7 +117,7 @@
   background: #009156;
 }
 
-.backdrop {
+.backdrop-together {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -133,12 +129,15 @@
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  position: relative;
 }
 
-.backdrop.is-open {
+.backdrop-together.are-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  z-index: 2;
 }
 
 .modal {
@@ -191,21 +190,33 @@
 
 @media screen and (min-width: 768px) {
   .work-together {
-    max-width: 704px;
+    margin-top: 164px;
     position: relative;
-    padding-top: 124px;
-    padding-bottom: 124px;
-    margin-right: 32px;
-    margin-left: 32px;
-    background-image: url('/img/work-together/tablet-1x.png');
+    /* background-image: url('/img/bg-materials/tablet-bg-together.png');
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right top;
+    padding-left: 32px;
+    padding-right: 32px; */
   }
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .work-together {
-      background-image: url('/img/work-together/tablet-2x.png');
+  .point-bg-worktogether {
+    background-image: url(../img/bg-materials/tablet-bg-together.png);
+    position: absolute;
+    width: 336px;
+    height: 260px;
+    top: -116px;
+    left: 400px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  @media screen and (-webkit-min-device-pexel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .point-bg-worktogether {
+      background-image: url(../img/bg-materials/tablet-bg-together-2x.png);
     }
   }
 
@@ -231,15 +242,15 @@
   }
 
   .form-input {
-    width: 704px;
+    max-width: 704px;
   }
 
   .form-textarea {
-    width: 704px;
+    max-width: 704px;
   }
 
   .form-button {
-    width: 173px;
+    max-width: 173px;
   }
 
   .modal {
@@ -255,19 +266,36 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .work-together {
-    max-width: 1216px;
+  /* .work-together {
     position: relative;
-    padding: 164px 0;
-    background-image: url('/img/work-together/desktop-1x.png');
+    background-image: url('/img/bg-materials/desctop-bgtogether.png');
     background-repeat: no-repeat;
-    background-position: right 0 top 48;
+    background-position: right top;
     background-size: auto;
+    padding-top: 116px;
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .work-together {
-      background-image: url('/img/work-together/desktop-2x.png');
+      background-image: url('/img/bg-materials/desctop-bgtogether-2x.png');
+    }
+  } */
+
+  .point-bg-worktogether {
+    background-image: url(../img/bg-materials/desctop-bgtogether.png);
+    position: absolute;
+    width: 526px;
+    height: 408px;
+    top: -116px;
+    left: 690px;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (-webkit-min-device-pexel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .point-bg-worktogether {
+      background-image: url(../img/bg-materials/desctop-bgtogether-2x.png);
     }
   }
 

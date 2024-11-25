@@ -33,3 +33,24 @@
   src: url('../fonts/impact.ttf') format('truetype');
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/poppins-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
