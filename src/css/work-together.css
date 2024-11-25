@@ -72,7 +72,7 @@
 .form-input {
   border-radius: 8px;
   padding: 16px;
-  msx-width: 320px;
+  max-width: 320px;
   height: 48px;
   background: #e4e5e6;
   border: none;
@@ -253,7 +253,7 @@
     position: relative;
     background-image: url('/img/bg-materials/desctop-bgtogether.png');
     background-repeat: no-repeat;
-    background-position: right 0 top -48;
+    background-position: right 0px top 0px;
     background-size: auto;
     padding-top: 116px;
   }
