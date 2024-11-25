@@ -1,4 +1,5 @@
-.faq-list {
+.faq {
+    padding-top: 80px;
 }
 .faq-title {
   font-weight: 400;
@@ -20,15 +21,7 @@
   padding: 28px 24px;
 }
 
-.paragraph-faq {
-  color: #292929;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 156%;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  font-weight: 500;
-}
+ 
 .faq-item.active {
   background: #bcdfd1;
   border-radius: 16px;
@@ -36,22 +29,27 @@
 }
 
 .faq-question {
-  background: none;
-  border: none;
-  outline: none;
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  text-align: left;
-  padding: 0;
+ font-family: "Poppins", sans-serif;
+color: #292929;
+font-weight: 400;
+font-size: 18px;
+line-height: 156%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+background: none;
+border: none;
+outline: none;
+display: flex;
+justify-content: space-between;
+cursor: pointer;
+text-align: left;
+padding: 0;
 }
 
-.faq-item.active .paragraph-faq {
-  margin-left: 0;
-}
-
+ 
 .faq-item.active .faq-question {
   margin-bottom: 24px;
+ 
 }
 
 .faq-answer {
@@ -98,11 +96,16 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* .faq-item {
-    min-width: 704px;
-  } */
+
+.faq {
+padding-top: 124px;
+
+}
+
   .faq-question {
     min-width: 656px;
+    font-size: 20px;
+    line-height: 160%;
   }
   .faq-title {
     font-size: 108px;
@@ -110,14 +113,16 @@
     line-height: 115%;
   }
 
-  .paragraph-faq {
-    /* min-width: 600px; */
-    font-size: 20px;
-    line-height: 160%;
-  }
+ 
 }
 
 @media screen and (min-width: 1280px) {
+
+.faq {
+padding-top: 164px;
+
+}
+
   .background-faq {
     position: absolute;
     top: 610px;
@@ -144,9 +149,7 @@
     margin: 0;
   }
 
-  .paragraph-faq {
-    /* min-width: 480px; */
-  }
+  
 
   .faq-list {
     max-width: 592px;
