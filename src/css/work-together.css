@@ -1,5 +1,4 @@
 .work-together {
-  margin-top: 164px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -191,6 +190,7 @@
 
 @media screen and (min-width: 768px) {
   .work-together {
+    margin-top: 164px;
     position: relative;
     /* background-image: url('/img/bg-materials/tablet-bg-together.png');
     background-repeat: no-repeat;
