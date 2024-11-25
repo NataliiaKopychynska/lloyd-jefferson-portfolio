@@ -41,7 +41,7 @@
   min-width: 100%;
   white-space: nowrap;
   animation-name: marqueeLine;
-  animation-duration: 8s;
+  animation-duration: 40s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -77,7 +77,7 @@
     min-width: 100%;
     white-space: nowrap;
     animation-name: marqueeLine;
-    animation-duration: 8s;
+    animation-duration: 40s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
