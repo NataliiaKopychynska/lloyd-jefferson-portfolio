@@ -1,3 +1,5 @@
+.faq-list {
+}
 .faq-title {
   font-weight: 400;
   font-size: 52px;
@@ -96,6 +98,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  /* .faq-item {
+    min-width: 704px;
+  } */
+  .faq-question {
+    min-width: 656px;
+  }
   .faq-title {
     font-size: 108px;
     letter-spacing: 0.02em;
@@ -103,7 +111,7 @@
   }
 
   .paragraph-faq {
-    min-width: 600px;
+    /* min-width: 600px; */
     font-size: 20px;
     line-height: 160%;
   }
@@ -137,7 +145,7 @@
   }
 
   .paragraph-faq {
-    min-width: 480px;
+    /* min-width: 480px; */
   }
 
   .faq-list {
