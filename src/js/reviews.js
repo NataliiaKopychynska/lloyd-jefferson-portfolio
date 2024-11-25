@@ -6,7 +6,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 const swiper = new Swiper('.swiper', {
 navigation: {
     nextEl: '.swiper-button-n',
-    prevEl: '.swiper-button-p',
+        prevEl: '.swiper-button-p',
   },
  pagination: {
     el: '.swiper-pagination',
@@ -31,18 +31,18 @@ reachEnd:'.swiper-button-n',
 
 swiper.on('reachEnd', function() {
     let swjsNext = document.querySelector('.swiper-button-n');
-    swjsNext.style.border = '1px solid #e4e5e6';
+    swjsNext.style.border = '1px solid #D0D0D0';
     swjsNext.style.pointerEvents = 'none';
     let btnIconN = document.querySelector('.btn-icon-n');
-    btnIconN.style.stroke = '#e4e5e6';
+    btnIconN.style.stroke = '#D0D0D0';
 });
 
 swiper.on('reachBeginning', function() {
     let swjsPrev = document.querySelector('.swiper-button-p');
-    swjsPrev.style.border = '1px solid #e4e5e6';
+    swjsPrev.style.border = '1px solid #D0D0D0';
     swjsPrev.style.pointerEvents = 'none';
     let btnIconP = document.querySelector('.btn-icon-p');
-    btnIconP.style.stroke = '#e4e5e6';
+    btnIconP.style.stroke = '#D0D0D0';
 });
 
 swiper.on('fromEdge', function() {
