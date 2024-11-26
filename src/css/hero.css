@@ -201,7 +201,7 @@ text-decoration-skip-ink: none;
         font-size: 136px;
         font-weight: 400;
         line-height: 156px;
-        letter-spacing: 1.7999999523162842px;
+        letter-spacing: 1.8px;
         text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
@@ -221,25 +221,25 @@ text-decoration-skip-ink: none;
         position:relative;
         min-width: 416px;
         height: 96px;
-         
+        /* transition:  0.5s cubic-bezier(0.165, 1, 0.075, 0.82); */
         margin-bottom: 0;  
     }
+     
     .hero-box:hover .bg-box {
         background-color:#00B068;
-        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    
+        transition:  0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
-    /* .hero-box:hover .hero-link {
-         margin-left:130px;
-         transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    } */
+     
     .hero-box:hover {
         gap:30px;
+    }
+    .hero-icon-arrow{
+        transition: 1s   cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     .hero-box:hover .hero-icon-arrow {
          
         margin-left:120px;
-        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+         
    }
     .work-text {
         width:592px;
