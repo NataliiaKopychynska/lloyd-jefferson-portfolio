@@ -1,7 +1,5 @@
 .work-together {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 116px;
+  padding-top: 80px;
 }
 
 .together-title {
@@ -73,7 +71,7 @@
 .form-input {
   border-radius: 8px;
   padding: 16px;
-  msx-width: 320px;
+  max-width: 320px;
   height: 48px;
   background: #e4e5e6;
   border: none;
@@ -187,20 +185,37 @@
   stroke: #292929;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
   .work-together {
-    position: relative;
-    background-image: url('/img/bg-materials/tablet-bg-together.png');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: right top;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-top: 124px;
+    /* position: relative; */
   }
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .work-together {
-      background-image: url('/img/bg-materials/tablet-bg-together-2x.png');
+  .together-container {
+    position: relative;
+  }
+
+  .point-bg-worktogether {
+    background-image: url(../img/bg-materials/tablet-bg-together.png);
+    position: absolute;
+    width: 336px;
+    height: 260px;
+    top: -120px;
+    left: 400px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  @media screen and (-webkit-min-device-pexel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .point-bg-worktogether {
+      background-image: url(../img/bg-materials/tablet-bg-together-2x.png);
     }
   }
 
@@ -251,16 +266,28 @@
 
 @media screen and (min-width: 1280px) {
   .work-together {
-    position: relative;
-    background-image: url('/img/bg-materials/desctop-bgtogether.png');
-    background-repeat: no-repeat;
-    background-position: right 0 top -48;
-    background-size: auto;
+    padding-top: 164px;
   }
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .work-together {
       background-image: url('/img/bg-materials/desctop-bgtogether-2x.png');
+    }
+  } */
+
+  .point-bg-worktogether {
+    background-image: url(../img/bg-materials/desctop-bgtogether.png);
+    width: 526px;
+    height: 408px;
+    top: -116px;
+    left: 722px;
+  }
+
+  @media screen and (-webkit-min-device-pexel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .point-bg-worktogether {
+      background-image: url(../img/bg-materials/desctop-bgtogether-2x.png);
     }
   }
 

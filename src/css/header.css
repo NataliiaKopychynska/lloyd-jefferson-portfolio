@@ -11,7 +11,7 @@
     overflow: hidden;
 }
 
-.header{
+.header-box{
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
@@ -40,6 +40,18 @@
     stroke: black;
 }
 
+.link-section{
+    font-family: Poppins;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 .navig-header {
     position: absolute;
     top: 64px;
@@ -51,21 +63,30 @@
     align-items: center;
     justify-content: center;
     transition: left 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    background-image: url('./img/bg-materials/mobile.bg-hero-2x.png');
+    background-image: url('../img/bg-materials/mobile.bg-hero-2x.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: contain;
+    z-index: 999;
 }
 
+.icon-night{
+    fill: white;
+    stroke: white;
+}
 .navig-header-night{
     background-color: rgba(41, 41, 41, 1);
     color: white;
-    fill: white;
-    stroke: white;
+}
+
+.no-scroll{
+    overflow: hidden;
 }
 
 .nav-mob-open {
     left: 0;
+    position: fixed;
+    z-index: 999;
 }
 
 .header-list{
@@ -77,36 +98,19 @@
 }
 
 .header-item{
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
-    &:hover{
-        color: rgba(0, 176, 104, 1);
-        font-size: 18px;
-        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-        font-weight: 400;
-    }
-
-     :focus {
-        color: rgba(0, 176, 104, 1);
-        font-size: 18px;
-        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-
-    :active {
-        color: rgba(0, 176, 104, 1);
-    }
+    &:hover, :focus {
+            color: rgba(0, 176, 104, 1);
+        }
+    
+        :active {
+            color: rgba(0, 176, 104, 1);
+        }
 }
 
 @media screen and (min-width:768px) {
-    .header {
-        padding: 32px;
+    .header-box {
+        padding-top: 32px;
+        padding-bottom: 32px;
         }
     
     .link-logo-header{
@@ -135,7 +139,5 @@
 }
 
 @media screen and (min-width:1280px) {
-    .header {
-            padding: 36px;
-        }
+   
 }

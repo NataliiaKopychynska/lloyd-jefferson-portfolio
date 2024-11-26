@@ -1,3 +1,7 @@
+.about-section {
+    padding-top: 20px;
+}
+
 .about-title {
     font-weight: 400;
     font-size: 52px;
@@ -15,9 +19,10 @@
 .about-image {
     border-radius: 16px;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
-.about-img-box {
+.about-picture {
     max-width: 320px;
     min-width: 280px;
     height: auto;
@@ -85,18 +90,22 @@
 
 @media screen and (min-width:768px) {
     .about-section {
+        padding-top: 124px;
+    }
+
+    /* @media (min-resolution: 192dpi) {
+        .about-backbox {
+            background-image: url(../img/bg-materials/tablet-bg-about-2x.png);
+            background-size: 336px 252px;
+        }
+    } */
+
+    .about-backbox {
         background-image: url(../img/bg-materials/tablet-bg-about.png);
         background-repeat: no-repeat;
         background-position: right 32px bottom 156px;
         background-size: auto;
     }
-
-    /* @media (min-resolution: 192dpi) {
-        .about-section {
-            background-image: url(../img/bg-materials/tablet-bg-about-2x.png);
-            background-size: 336px 252px;
-        }
-    } */
 
     .about-title {
         font-size: 108px;
@@ -113,7 +122,11 @@
         margin-bottom: 60px;
     }
 
-    .about-img-box {
+    .about-image {       
+        margin-bottom: 0;
+    }
+
+    .about-picture {
         align-self: flex-end;
         margin-bottom: 0;
         max-width: 336px;
@@ -122,6 +135,7 @@
     
     .about-bio {
         flex: 1;
+        margin-bottom: 0;
     }
     
     .about-subtitle {
@@ -152,16 +166,13 @@
 
 @media screen and (min-width:1280px) {
     .about-section {
+        padding-top: 164px;
+    }
+
+    .about-backbox {
         background-image: url(../img/bg-materials/desctop-bg-about.png);
         background-position: right 32px bottom 264px;
     }
-
-    /* @media (min-resolution: 192dpi) {
-        .about-section {
-            background-image: url(../img/bg-materials/desctop-bg-about-2x.png);
-            background-size: 384px 288px;
-        }
-    } */
     
     .about-upper-container {
         gap: 136px;
@@ -169,7 +180,7 @@
         margin-bottom: 80px;
     }
     
-    .about-img-box {
+    .about-picture {
         margin-left: 208px;
         max-width: 384px;
         height: 448px;
