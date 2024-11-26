@@ -116,16 +116,24 @@
 
 @media only screen and (min-width: 1280px) {
   .benefits {
-    padding-top: 0;
+    padding-top: 164px;
+  }
+
+  .benefits-container {
+    position: relative;
   }
 
   .benefits-back {
     background-image: url('/img/bg-materials/desctop-bg-benefits.png');
+    position: absolute;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100% auto;
     background-position: right top;
-    background-size: 526px 409px;
-    padding-top: 116px;
+    /* background-size: 526px 409px; */
+    width: 526px;
+    height: 408px;
+    top: -116px;
+    left: 722px;
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
