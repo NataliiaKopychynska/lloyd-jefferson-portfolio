@@ -194,6 +194,7 @@
   .work-together {
     padding-top: 124px;
     /* position: relative; */
+    padding-bottom: 124px;
   }
 
   .together-container {
@@ -268,6 +269,7 @@
 @media screen and (min-width: 1280px) {
   .work-together {
     padding-top: 164px;
+    padding-bottom: 164px;
   }
 
   /* @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
