@@ -82,16 +82,13 @@
     z-index: 999;
 }
 
-.icon-night{
-    fill: white;
-    stroke: white;
-}
-
 .night-bg-color{
     background-color: rgba(30, 32, 35, 1);
 }
 .night-color{
     color: white;
+    fill: #fff;
+    stroke: #fff;
 }
 
 .no-scroll{

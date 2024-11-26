@@ -25,7 +25,7 @@ function modalOpen() {
     
   }
 }
-
+const modalItems = modalList.children;
 Array.from(modalItems).forEach(item => {
   item.addEventListener("click", closeModal);
 });
@@ -36,24 +36,26 @@ function closeModal() {
   bodyToSite.classList.remove("no-scroll");
 }
 
+
+
 const now = new Date();
 const hours = now.getHours();
+console.log(hours);
 
-
-
-// if (hours >= 11 || hours < 6) {
+if (hours >= 18 || hours < 6) {
     
-//   navModal.classList.add("navig-header-night");
-//   logoText.classList.add("navig-header-night");
-//   header.classList.add("night-bg-color");
-//   iconModal.classList.add("icon-night");
-//     bodyToSite.classList.add("navig-header-night");
+  navModal.classList.add("night-color");
+  navModal.classList.add("night-bg-color");
+  logoText.classList.add("night-color");
+  header.classList.add("night-bg-color");
+  iconStart.classList.add("night-color");
+    bodyToSite.classList.add("night-bg-color");
     
-// } else {
+} else {
    
-//   navModal.classList.remove("navig-header-night");
-//   logoText.classList.remove("navig-header-night");
-//   header.classList.remove("navig-header-night");
-//   iconModal.classList.remove("icon-night");
-//     bodyToSite.classList.remove("navig-header-night");
-// }
+  navModal.classList.remove("navig-header-night");
+  logoText.classList.remove("navig-header-night");
+  header.classList.remove("navig-header-night");
+  iconModal.classList.remove("icon-night");
+    bodyToSite.classList.remove("navig-header-night");
+}
