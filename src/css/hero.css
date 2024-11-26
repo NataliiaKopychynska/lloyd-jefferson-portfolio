@@ -123,7 +123,7 @@ text-decoration-skip-ink: none;
 @media screen and (min-width:768px) {
      .hero {
         padding-top: 88px;
-        padding-bottom: 62px;
+        /* padding-bottom: 62px; */
         background-image: url(/img/bg-materials/tablet-bg-hero.png);
         background-size: auto;
      }
@@ -186,8 +186,10 @@ text-decoration-skip-ink: none;
 @media screen and (min-width:1280px) {
     .hero {
         padding-top: 184px;
+        padding-bottom: 0;
         background-image: url(/img/bg-materials/desctop-bg-hero.png);
         background-size: auto;
+
      }
      .hero-container {
         margin-bottom: 132px;
