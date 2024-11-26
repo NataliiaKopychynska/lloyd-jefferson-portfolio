@@ -34,7 +34,7 @@
 
 @media screen and (min-width: 768px) {
   .footer {
-    padding-top: 124px;
+    /* padding-top: 124px; */
   }
   .footer-list {
     flex-direction: row;
@@ -58,9 +58,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .footer {
-    padding-top: 164px;
-  }
   .footer-wrap {
     flex-direction: row;
     justify-content: space-between;
