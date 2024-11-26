@@ -1,19 +1,9 @@
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+.header{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header-box{
-    padding-top: 20px;
-    padding-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,8 +64,11 @@
     fill: white;
     stroke: white;
 }
-.navig-header-night{
-    background-color: rgba(41, 41, 41, 1);
+
+.night-bg-color{
+    background-color: rgba(30, 32, 35, 1);
+}
+.night-color{
     color: white;
 }
 
@@ -108,7 +101,7 @@
 }
 
 @media screen and (min-width:768px) {
-    .header-box {
+    .header{
         padding-top: 32px;
         padding-bottom: 32px;
         }
