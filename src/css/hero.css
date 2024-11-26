@@ -6,7 +6,7 @@
     background-image: url(/img/bg-materials/mobile.bg-hero.png);
     background-repeat: no-repeat;
     background-size: auto;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 .hero-container {
     margin-bottom: 72px;
@@ -123,7 +123,7 @@ text-decoration-skip-ink: none;
 @media screen and (min-width:768px) {
      .hero {
         padding-top: 88px;
-        /* padding-bottom: 62px; */
+        padding-bottom: 0;
         background-image: url(/img/bg-materials/tablet-bg-hero.png);
         background-size: auto;
      }
