@@ -38,24 +38,50 @@ function closeModal() {
 
 
 
-const now = new Date();
-const hours = now.getHours();
-console.log(hours);
+// const now = new Date();
+// const hours = now.getHours();
 
-if (hours >= 18 || hours < 6) {
+// const allHeadings = document.querySelectorAll('h1, h2, h3, h4');
+// const paragraff = document.querySelectorAll('p');
+
+// if (hours >= 18 || hours < 6) {
+  
+//   navModal.classList.add("night-color");
+//   navModal.classList.add("night-bg-color");
+//   logoText.classList.add("night-color");
+//   header.classList.add("night-bg-color");
+//   iconStart.classList.add("night-color");
+//   bodyToSite.classList.add("night-bg-color");
+  
+//    allHeadings.forEach(heading => {
+//   heading.classList.add('night-color');
+//    });
+  
+//   paragraff.forEach(par => {
+//   par.classList.add('night-color');
+//   });
+  
+//   listnigth.forEach(items => {
+//   items.classList.add('night-color');
+//   });
     
-  navModal.classList.add("night-color");
-  navModal.classList.add("night-bg-color");
-  logoText.classList.add("night-color");
-  header.classList.add("night-bg-color");
-  iconStart.classList.add("night-color");
-    bodyToSite.classList.add("night-bg-color");
-    
-} else {
+// } else {
    
-  navModal.classList.remove("navig-header-night");
-  logoText.classList.remove("navig-header-night");
-  header.classList.remove("navig-header-night");
-  iconModal.classList.remove("icon-night");
-    bodyToSite.classList.remove("navig-header-night");
-}
+//   navModal.classList.remove("navig-header-night");
+//   logoText.classList.remove("navig-header-night");
+//   header.classList.remove("navig-header-night");
+//   iconModal.classList.remove("icon-night");
+//   bodyToSite.classList.remove("navig-header-night");
+  
+//    allHeadings.forEach(heading => {
+//   heading.classList.remove('night-color');
+//    });
+  
+//   paragraff.forEach(par => {
+//   par.classList.remove('night-color');
+//   });
+  
+//   listnigth.forEach(items => {
+//   items.classList.remove('night-color');
+//   });
+// }
